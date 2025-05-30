@@ -48,4 +48,4 @@ Route::get("/about", function(){
 });
 
 
-Route::get("/users", [UserController::class, "getAllUsers"]);
+Route::resource("users", UserController::class);

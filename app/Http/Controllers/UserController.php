@@ -11,11 +11,11 @@ class UserController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function getAllUsers()
+    public function index()
     {
         $users = User::all();
         // return view("users", compact("users"));
-        return view("users", ["users"=> $users]);
+        return view("users.index", ["users"=> $users]);
     }
 
     /**
